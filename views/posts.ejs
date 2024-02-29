@@ -1,0 +1,33 @@
+<% include ./partials/header.ejs %>
+
+<div class="content">
+
+  <div class="mx-4">
+    <form action="/upload" method="post" enctype="multipart/form-data" class="multer-btn">
+      <input type="file" name="file" class="block w-1/3 px-3 py-2">
+      <input type="text" name="title" class="block w-1/3 px-3 py-2 border-2 mt-2 rounded-md">
+      <textarea type="text" name="filecaption" placeholder="post text" class="block w-1/3 px-3 py-2 border-2 mt-2 rounded-md"></textarea>
+      <input type="submit" value="create pin" class="block w-1/3 px-3 py-2 border-2 mt-2 rounded-md" id="color">
+    </form>
+  </div>
+    
+  <div class="mx-4 my-4">
+    <div class="cards flex">
+      <% user.posts.forEach(function(post){ %>
+        <div class="card bg-slate-300" style="width: 15rem;">
+          <img src="/images/uploads/<%= post.image %>" class="card-img-top p-1" alt="">
+          <div class="card-body">
+            <h5 class="card-title" style="width: 70%;"><%= post.title %></h5>
+            <h5 class="card-title" style="width: 70%;"><%= post.imageText %></h5>
+          </div>
+          <form method="post" action="/delete/<%= user._id %>/<%= post._id %>?_method=DELETE">
+            <button type="submit" class="buttond">Delete Post</button>
+          </form>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+
+</div>
+
+<% include ./partials/footer.ejs %>
