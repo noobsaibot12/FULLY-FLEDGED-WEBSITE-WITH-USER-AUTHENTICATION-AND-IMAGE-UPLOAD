@@ -101,7 +101,7 @@
   .buttond {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff0011;
+    background-color: #987070;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -109,7 +109,7 @@
   }
   
   .buttond:hover {
-    background-color: #df1111;
+    background-color: #735656;
   }
 
   #color{

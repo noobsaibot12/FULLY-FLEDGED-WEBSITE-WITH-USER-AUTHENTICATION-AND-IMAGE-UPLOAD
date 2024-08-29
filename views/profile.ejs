@@ -13,8 +13,8 @@
     
         <h2 class="name"><%= user.fullname %> </h2>
         <h3 class="username">@<%= user.username %> </h3>
-        <p class="tagline">Some tagline</p>
-        <p class="description">Some description</p>
+        <!-- <p class="tagline">Some tagline</p> -->
+        <!-- <p class="description">Some description</p> -->
         <!-- <a href="#" class="button">Account Setting</a> -->
         <a href="/login" class="button">Logout</a>      
       </div>
@@ -25,8 +25,8 @@
       <img src="https://imageio.forbes.com/specials-images/imageserve/5faad4255239c9448d6c7bcd/Best-Animal-Photos-Contest--Close-Up-Of-baby-monkey/960x0.jpg?format=jpg&width=960" class="w-40 h-28 br rounded-md" alt="">
       <div class="my-2">
 
-        <h4 class="font-sans antialiased font-semibold">Your uploaded pins</h4>
-        <a href="/profile/posts" class="font-sans antialiased font-normal"><%= user.posts.length %> pins</a>
+        <h4 class="font-sans antialiased font-semibold">uploaded images</h4>
+        <a href="/profile/posts" class="font-sans antialiased font-normal"><%= user.posts.length %> images</a>
 
       </div>
 

@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
-    padding: 0.938rem;
+    padding: 1rem;
     width: 100vw;
     z-index: 1;
   }
@@ -44,9 +44,9 @@
   }
   .left #home {
     font-weight: bold;
-    color: #fff;
+    color: #000000;
     padding: 1rem;
-    background-color: #151515;
+    /* background-color: #151515; */
     border-radius: 1.563rem;
   }
   

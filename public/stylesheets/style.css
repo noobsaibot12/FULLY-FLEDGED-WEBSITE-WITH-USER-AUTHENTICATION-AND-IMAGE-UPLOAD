@@ -9,7 +9,7 @@ body {
   /* font-family: Arial, Helvetica, sans-serif;  */
 }
 .index_container {
-  background-color: rgb(222 222 222);
+  background-color: #EEEDEB;
   width: 450px;
   position: absolute;
   top: 50%;
@@ -77,15 +77,15 @@ h4 {
 }
 
 .int {
-  background-color: #ff000d;
+  background-color: #3C3633;
   margin: 10px 0px;
-  color: white;
+  color: #F1F8E8;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
 }
 .int:hover{
-  background-color: #df0812;
+  background-color: #59514e;
 }
 
 .or {

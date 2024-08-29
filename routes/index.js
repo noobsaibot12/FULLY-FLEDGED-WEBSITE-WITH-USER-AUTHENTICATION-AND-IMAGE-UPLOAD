@@ -100,6 +100,7 @@ router.get('/search', isLoggedIn,function(req, res, next) {
 router.get('/feed',isLoggedIn, async function(req, res, next) {
   const user = await userModel.findOne({username: req.session.passport.user});
   const posts = await postModel.find().populate("userid");
+  // console.log("posts :- ", posts)
   // console.log(posts.userid.username);
   res.render('feed', { user, posts });
 });
